@@ -6,7 +6,7 @@ import SuperJSON from 'superjson';
 type SuperJSONProps<P> = P & {
   _superjson?: ReturnType<typeof SuperJSON.serialize>['meta'];
 };
-
+ 
 export function withSuperJSONProps<P>(
   gssp: GetServerSideProps<P>,
   exclude: string[] = []
